@@ -21,7 +21,7 @@ const {open,setOpen} = useContext(BurgerContext)
         </p>
       </div>
       <div className="flex items-center  p-0 relative justify-between mt-20 mobile:py-0 mobile:p-0">
-        <div className="flex gap-0 mobile:gap-0">
+        <div className="flex gap-50 mobile:gap-0">
           <img
             className="table:w-45 tablemin:w-40 tablemin:h-40 mobile530:w-30 mobile530:h-30"
             src={Logo}
