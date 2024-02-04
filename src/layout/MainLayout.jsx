@@ -5,8 +5,8 @@ import Home from '../pages/home/Home';
 
 function MainLayout(props) {
     return (
-        <div>
-            <header >
+        <div className='mt-0'>
+            <header className='shadow-md pb-10 pt-0 mt-0' >
             <Header/>
             </header>
             <main>

@@ -9,7 +9,7 @@ function App() {
 
   return (
    <>
-   <div className=" mx-auto container px-5 ">
+   <div >
    <BurgerContext.Provider value={{open,setOpen}}>
    <MainLayout/>
 
