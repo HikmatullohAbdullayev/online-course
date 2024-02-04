@@ -6,7 +6,7 @@ import Home from '../pages/home/Home';
 function MainLayout(props) {
     return (
         <div>
-            <header>
+            <header >
             <Header/>
             </header>
             <main>

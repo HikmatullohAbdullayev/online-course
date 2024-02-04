@@ -1,53 +1,52 @@
-import React from 'react';
-import VectorIcon from '../assets/icon/VectorIcon';
-import Logo from "../assets/img/Logo.png"
-import { Link} from 'react-router-dom';
-import LogInIcon from '../assets/icon/LogInIcon';
-import HomeIcon from '../assets/icon/HomeIcon';
-import BurgerMenu from '../components/BurgerMenu';
+import React, { useContext, useState } from "react";
+import VectorIcon from "../assets/icon/VectorIcon";
+import Logo from "../assets/img/Logo.png";
+import Nav from "../components/Nav";
+import Button1 from "../components/Button1";
+import Button2 from "../components/Button2";
+import { BurgerContext } from "../assets/context/BurgerContext";
+
 
 function Header(props) {
-    return (
-      <div className='relative'>
-        <div className="flex items-center   justify-center bg-primary rounded-6">
-          <p className="text-text18 text-white  text-center py-8 table:text-text16 ">
-            Free Courses 🌟 Sale Ends Soon, Get It Now
-          </p>
-          <span className="ml-16 ">
-            <VectorIcon />
-          </span>
+const {open,setOpen} = useContext(BurgerContext)
+
+  return (
+    <div className="relative fixed top-4">
+      <div className="flex items-center   justify-center bg-primary rounded-6">
+        <p className="text-text18 text-white  text-center py-8 table:text-text16 ">
+          Free Courses 🌟 Sale Ends Soon, Get It Now
+        </p>
+        <span className="ml-16 ">
+          <VectorIcon />
+        </span>
+      </div>
+      <div className="flex items-center relative justify-between mt-30">
+        <div className="flex gap-50">
+          <img
+            className="table:w-45 tablemin:w-40 tablemin:h-40"
+            src={Logo}
+            alt="logo"
+          />
+          <Nav />
         </div>
-        <div className="flex items-center justify-between mt-20">
-     
-        <nav className='flex items-center gap-50 mobile3:gap-24'>
-          <img className='table:w-45 tablemin:w-40 tablemin:h-40' src={Logo} alt="logo"/>
-          {/* <ul className='flex  gap-24 tablemin:gap-16 '>
 
-              <li className='font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary table:py-12 table:text-text16 mobile3:text-text12  '> Home  </li>
-              <li className='font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary table:py-12 table:text-text16 mobile3:text-text12 '>  Courses  </li>
-              <li className='font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary table:py-12 table:text-text16 mobile3:text-text12 '> About Us  </li>
-              <li className='font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary table:py-12 table:text-text16 mobile3:text-text12 '>  Pricing  </li>
-              <li className='font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary table:py-12 table:text-text16 mobile3:text-text12 '>  Contact  </li>
-                  
-            </ul> */}
-          </nav>
-          <div className="flex gap-10 tablemin:gap-6 mobil670:hidden mobile:block">
-            <button className='py-14 px-30 rounded-6  hover:bg-primary hover:text-white cursor-pointer table:py-12 table:px-26 text-text16 '>Sing Up</button>
-            <button className='py-14 px-30 rounded-6 bg-primary text-white  cursor-pointer table:py-12 table:px-26 table:text-text16 tablemin:py-8 tablemin:px-8 '>Login</button>
-          </div>
-          <div className=" flex justify-between items-center hidden cursor-pointer mobil670:flex mobil670:gap-8 ">
-           <button className=''><HomeIcon/></button>
-            <button className=''><LogInIcon/></button>
-            <button> x <span className='w-150 fixed right-[-120px] top-0'><BurgerMenu/></span></button>
-          
-          </div>
-
-          
-            
-          
+        <div className="flex gap-10 tablemin:gap-6  mobile:block">
+          <Button1> Sing Up</Button1>
+          <Button2>Login</Button2>
+          <button
+          onClick={() => setOpen(!open)}
+          className={` flex flex-col justify-center bg-primary rounded-8 w-50 h-50 hidden ${open ? "mt-12 mr-12" : "" } z-20 cursor-pointer mobile3:flex mobil670:gap-8 mobile3:transition-all mobile3:duration-500 mobile3:ease-in-out `}
+        >
+          <span className=" mx-auto  text-3xl text-white font-600 ">
+            <ion-icon className="" name={open ? "close" : "menu"}></ion-icon>
+          </span>
+        </button>
+       
         </div>
       </div>
-    );
+    </div>
+  );
 }
 
 export default Header;
+
