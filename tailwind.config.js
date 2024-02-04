@@ -1,3 +1,5 @@
+
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -20,6 +22,8 @@ export default {
         'name20': '20px',   // Table
         'text16': '16px',    // Table
         'text14': '14px',    // Table
+        'text12': '12px',    // Table
+        'text10': '10px',    // Table
 
         'number50': '50px',   // Mobile
       },
@@ -33,14 +37,23 @@ export default {
       },
     
     screens: {
-      'mobil': {'max':'360px'},
+      'mobile': {'max':'360px'},
       // => @media (max-width: 360px) { ... }
+      
+      'mobile530': {'max':'530px'},
+      // => @media (max-width: 530px) { ... }
       
       'mobil2': {'max':'640px'},
       // => @media (max-width: 640px) { ... }
+     
+      'mobil670': {'max':'670px'},
+      // => @media (max-width: 670px) { ... }
 
       'mobile3': {'max': '768px'},
       // => @media (max-width: 768px) { ... }
+      
+      'tablemin': {'max': '845px'},
+      // => @media (max-width: 845px) { ... }
 
       'table': {'max':'1024px'} ,
       // => @media (max-width: 1024px) { ... }
@@ -60,13 +73,22 @@ export default {
   
     extend: {
       spacing: {
+        '2': '2px',
+        '4': '4px',
+        '6': '6px',
         '8': '8px',
         '10': '10px',
         '14': '14px',
         '12': '12px',
         '16': '16px',
         '18': '18px',
+        '20': '20px',
+        '24': '24px',
+        '26': '26px',
+        '28': '28px',
+        '30': '30px',
         '32': '32px',
+        '34': '34px',
         '40': '40px',
         '50': '50px',
         '80': '80px',
