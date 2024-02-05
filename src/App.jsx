@@ -7,6 +7,7 @@ import { SectionContext } from "./assets/context/SectionContext";
 import { Link, Routes, Route } from "react-router-dom";
 import About from "./pages/about/About";
 import NotFound from "./pages/NotFound/NotFound";
+import MainPage from "./pages/login/MainPage";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -20,6 +21,7 @@ function App() {
               <Route path="/" element={<MainLayout />}>
                 <Route index element={<Home />} />
                 <Route path="about" element={<About />} />
+                <Route path="login" element={<MainPage/>}/>
 
                 <Route path="*" element={<NotFound/>}/>
                </Route>

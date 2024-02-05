@@ -5,6 +5,7 @@ import Nav from "../components/Nav";
 import Button1 from "../components/Button1";
 import Button2 from "../components/Button2";
 import { BurgerContext } from "../assets/context/BurgerContext";
+import { NavLink } from "react-router-dom";
 
 
 function Header(props) {
@@ -22,11 +23,11 @@ const {open,setOpen} = useContext(BurgerContext)
       </div>
       <div className="flex items-center  p-0 relative justify-between mt-20 mobile:py-0 mobile:p-0">
         <div className="flex gap-50 mobile:gap-0">
-          <img
+          <NavLink to="/"><img
             className="table:w-45 tablemin:w-40 tablemin:h-40 mobile530:w-30 mobile530:h-30"
             src={Logo}
             alt="logo"
-          />
+          /></NavLink>
           <Nav />
         </div>
 

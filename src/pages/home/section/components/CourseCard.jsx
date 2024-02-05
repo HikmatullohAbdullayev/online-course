@@ -1,5 +1,5 @@
 import React from 'react';
-import  courseData  from '../data/CourseData.js';
+import  courseData  from '../data/CourseData';
 
 function CourseCard(props) {
     return (
@@ -7,7 +7,7 @@ function CourseCard(props) {
             {
                 courseData.map((item) => (
                     <div className='flex  flex-col p-40 bg-white rounded-6 gap-30  hover:shadow-md ' key={item.id}>
-                        <div className='w-[600px] h-[300px] rounded-6 bg-primary  mx-auto'><img className=' w-full h-full rounded-6   object-cover' src={item.img} alt="img" /></div>
+                        <div className='w-auto h-auto rounded-6  mx-auto'><img className=' w-full h-full rounded-6   object-cover' src={item.img} alt="img" /></div>
                         <div className="flex justify-between items-center">
                         <div className="flex">
                             <p className='font-400 text-text18 text-text '>{item.week}</p>
