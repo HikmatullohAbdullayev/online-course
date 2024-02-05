@@ -1,10 +1,14 @@
 import React from 'react';
+import SectionTop from './components/SectionTop';
+import CourseCard from './components/CourseCard';
 
 function OurCoursesSection(props) {
     return (
-        <div>
-           <h1>OurcoursesSection</h1> 
-        </div>
+        <section className="container mx-auto mt-100">
+            <SectionTop title={"Our Courses"} />
+
+            <CourseCard/>
+        </section>
     );
 }
 

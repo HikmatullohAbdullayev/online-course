@@ -66,7 +66,9 @@ export default {
       black: "#000",
       primary: "#FF9500",
       secondary:"#FFBF66",
-      shadow: "#E4E4E7"
+      shadow: "#E4E4E7",
+      text:"rgb(89, 89, 90)",
+      background: "#f7f7f8"
 
 
     },

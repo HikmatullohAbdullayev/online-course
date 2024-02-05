@@ -1,11 +1,18 @@
-import React from 'react';
+import React from "react";
+import BenefitCard from "./components/BenefitCard";
+import SectionTop from "./components/SectionTop";
 
 function BenefitsSection(props) {
-    return (
-        <div>
-            <h1>BannerSection</h1>
-        </div>
-    );
+  return (
+    <section className="container mx-auto mt-100">
+      <SectionTop
+        title={"Benefits"}
+        
+      />
+
+      <BenefitCard />
+    </section>
+  );
 }
 
 export default BenefitsSection;
