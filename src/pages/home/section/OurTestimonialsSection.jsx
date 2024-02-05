@@ -11,6 +11,7 @@ function OurTestimonialsSection(props) {
         {
             testominalsData.map((item) => (
                 <div key={item.id} className="flex flex-col p-20 bg-white rounded-6 hover:shadow-md">
+                    {console.log(item.img)}
                     <p className='p-30'>{item.content}</p>
                     <div className="flex justify-between items-center " >
                         <div className="flex justify-between items-center gap-16">
