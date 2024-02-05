@@ -1,6 +1,5 @@
 import React from 'react';
-import ChaqIcon from "../../../assets/icon/ChaqIcon"
-import VectorsIcon from '../../../assets/icon/VectorsIcon';
+import ChaqIcon from "../../../../src/assets/icon/ChaqIcon"
 
 import Button1 from '../../../components/Button1';
 import Button2 from '../../../components/Button2';
