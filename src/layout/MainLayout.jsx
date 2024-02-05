@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import Home from '../pages/home/Home';
+import { Outlet } from 'react-router-dom';
 
 function MainLayout(props) {
     return (
@@ -10,7 +10,7 @@ function MainLayout(props) {
             <Header/>
             </header>
             <main>
-            <Home/>
+            <Outlet/>
             </main>
 
             <footer>

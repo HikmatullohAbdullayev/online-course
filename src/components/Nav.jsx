@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { BurgerContext } from "../assets/context/BurgerContext";
+import { NavLink } from "react-router-dom";
 
 function Nav(props) {
     const {open, setOpen} = useContext(BurgerContext)
@@ -12,16 +13,14 @@ function Nav(props) {
         } `}
         >
         <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary mobile3:hover:text-white rounded-6 table:py-12 table:text-text16 mobile3:text-text12  mobile3:mt-[80px] mobile3:hover:bg-primary mobile3:p-6 ">
-          {" "}
-          Home{" "}
+         <NavLink to="/"> Home</NavLink>
         </li>
         <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary mobile3:hover:text-whiterounded-6  table:py-12 table:text-text16 mobile3:text-text12  mobile3:hover:bg-primary mobile3:p-6  ">
-          {" "}
-          Courses{" "}
+        <NavLink to="/courses"> Courses</NavLink>
         </li>
         <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary mobile3:hover:text-whiterounded-6  table:py-12 table:text-text16 mobile3:text-text12  mobile3:hover:bg-primary mobile3:p-6  ">
-          {" "}
-          About Us{" "}
+        <NavLink to="/about">  About Us</NavLink>
+         
         </li>
         <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary mobile3:hover:text-whiterounded-6  table:py-12 table:text-text16 mobile3:text-text12  mobile3:hover:bg-primary mobile3:p-6  ">
           Pricing
