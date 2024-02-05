@@ -1,7 +1,10 @@
- const testominalsData = [
+import Sarah from "../../../../assets/img/sarah.png"
+
+
+const testominalsData = [
     {
         id:"1",
-        img:"",
+        img:{Sarah},
         name:"Sarah L",
         content:"The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!",
     },
