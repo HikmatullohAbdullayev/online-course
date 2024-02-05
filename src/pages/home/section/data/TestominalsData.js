@@ -1,7 +1,7 @@
 export const testominalsData = [
     {
         id:"1",
-        img:"../../../../../src/assets/img/sarah.png",
+        img:"../../../../assets/img/sarah.png",
         name:"Sarah L",
         content:"The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!",
     },
