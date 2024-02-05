@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionTop from './components/SectionTop';
 import  testominalsData  from './data/TestominalsData.js';
+const img = "../../../../../src/assets/img/sarah.png"
 
 function OurTestimonialsSection(props) {
     return (
@@ -15,7 +16,7 @@ function OurTestimonialsSection(props) {
                     <p className='p-30'>{item.content}</p>
                     <div className="flex justify-between items-center " >
                         <div className="flex justify-between items-center gap-16">
-                            <img src="../../../../../src/assets/img/sarah.png" alt="img" />
+                            <img src={img} alt="img" />
                             <h3>{item.name}</h3>
                         </div>
                         <p className=' p-10 bg-background cursor-pointer rounded-8 hover:bg-primary hover:text-white'> Read Full Story</p>
