@@ -24,7 +24,7 @@ function PricingSection(props ) {
             </div>
         </div>
 
-        <div className="flex justify-center py-50 px-30 gap-20 items-center bg-white">
+        <div className="flex justify-center mt-80 py-50 px-30 gap-20 items-center bg-white">
         <PricingCard1 />
         <PricingCard2 />
         </div>
