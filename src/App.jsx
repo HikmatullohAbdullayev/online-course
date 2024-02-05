@@ -5,7 +5,6 @@ import MainLayout from "./layout/MainLayout";
 import { BurgerContext } from "./assets/context/BurgerContext";
 import { SectionContext } from "./assets/context/SectionContext";
 import { Link, Routes, Route } from "react-router-dom";
-import Header from "./layout/Header";
 import About from "./pages/about/About";
 import NotFound from "./pages/NotFound/NotFound";
 
