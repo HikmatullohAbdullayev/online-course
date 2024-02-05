@@ -12,7 +12,7 @@ function App() {
    <>
    <div >
    <BurgerContext.Provider value={{open,setOpen}}>
-    <SectionContext.Provider>
+    <SectionContext.Provider value={null}>
    <MainLayout/>
 
     </SectionContext.Provider>

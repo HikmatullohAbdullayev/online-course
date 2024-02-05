@@ -1,11 +1,15 @@
 import React from 'react';
 import Button1 from '../../../components/Button1';
 import Button2 from '../../../components/Button2';
-import PricingCard from './components/PricingCard';
-import { PricieDataFree } from './data/PricieData';
-import { PricieDataPro } from './data/PricieData';
+import PricingCard1 from './components/PricingCard1';
+import PricingCard2 from './components/PricingCard2';
 
-function PricingSection(props) {
+
+
+function PricingSection(props ) {
+
+
+
     return (
         <section className="container mx-auto mt-100">
             <div className="flex justify-between items-center ">
@@ -21,8 +25,8 @@ function PricingSection(props) {
         </div>
 
         <div className="flex justify-center py-50 px-30 gap-20 items-center bg-white">
-        <PricingCard number={"$0"} title={"Free"} freeData={PricieDataFree}/>
-        <PricingCard number={"$79"} title={"Pro"} proData={PricieDataPro}/>
+        <PricingCard1 />
+        <PricingCard2 />
         </div>
 
 
