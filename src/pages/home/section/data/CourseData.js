@@ -1,13 +1,14 @@
 export const courseData =[
     {
         id:"1",
-        img:"../../../../../src/assets/img/Image1.png",
+        img:"../../../../../src/assets/img/Image.png",
         tetle:"Web Design Fundamentals",
         week:"4 Weeks",
         level:"Beginner",
         name:"By John Smith",
         content:"Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.",
     },
+    
     {
         id:"2",
         img:"../../../../../src/assets/img/Image2.png",
