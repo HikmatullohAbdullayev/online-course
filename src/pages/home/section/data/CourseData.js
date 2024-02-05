@@ -1,7 +1,7 @@
  const courseData =[
     {
         id:"1",
-        img:"https://deluxe-kitsune-924f7c.netlify.app/amazon.png",
+        img:"https://deluxe-kitsune-924f7c.netlify.app/Image.png",
         tetle:"Web Design Fundamentals",
         week:"4 Weeks",
         level:"Beginner",
@@ -11,7 +11,7 @@
     
     {
         id:"2",
-        img:"../../../../../src/assets/img/Image2.png",
+        img:"https://deluxe-kitsune-924f7c.netlify.app/Image2.png",
         tetle:"UI/UX Design",
         week:"6 Weeks",
         level:"Intermediate",
@@ -21,7 +21,7 @@
 
     {
         id:"3",
-        img:"../../../../../src/assets/img/Image3.png",
+        img:"https://deluxe-kitsune-924f7c.netlify.app/Image3.png",
         tetle:"Mobile App Development",
         week:"8 Weeks",
         level:"Intermediate",
@@ -30,7 +30,7 @@
     },
     {
         id:"4",
-        img:"../../../../../src/assets/img/Image4.png",
+        img:"https://deluxe-kitsune-924f7c.netlify.app/Image4.png",
         tetle:"Graphic Design for Beginners",
         week:"10 Weeks",
         level:"Beginner",
@@ -39,7 +39,7 @@
     },
     {
         id:"5",
-        img:"../../../../../src/assets/img/Image5.png",
+        img:"https://deluxe-kitsune-924f7c.netlify.app/Image5.png",
         tetle:"Front-End Web Development",
         week:"12 Weeks",
         level:"Advance",
@@ -48,7 +48,7 @@
     },
     {
         id:"6",
-        img:"../../../../../src/assets/img/Image6.png",
+        img:"https://deluxe-kitsune-924f7c.netlify.app/Image6.png",
         tetle:"Advanced JavaScript",
         week:"10 Weeks",
         level:"Beginner",

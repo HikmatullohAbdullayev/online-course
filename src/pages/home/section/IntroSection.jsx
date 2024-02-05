@@ -14,37 +14,37 @@ import Button2 from '../../../components/Button2';
 const imgData =[
     {
         id:1,
-        url:"https://deluxe-kitsune-924f7c.netlify.app/amazon.png",
+        url:"https://deluxe-kitsune-924f7c.netlify.app/zapier.png",
         alt:"img",
     },
     {
         id:2,
-        url:{Zoom},
+        url:"https://deluxe-kitsune-924f7c.netlify.app/zoom.png",
         alt:"img",
     },
     {
         id:3,
-        url:{Amazon},
+        url:"https://deluxe-kitsune-924f7c.netlify.app/amazon.png",
         alt:"img",
     },
     {
         id:4,
-        url:{Adobe},
+        url:"https://deluxe-kitsune-924f7c.netlify.app/adobe.png",
         alt:"img",
     },
     {
         id:5,
-        url:{Sopotify},
+        url:"https://deluxe-kitsune-924f7c.netlify.app/sopotify.png",
         alt:"img",
     },
     {
         id:6,
-        url:{Notion},
+        url:"https://deluxe-kitsune-924f7c.netlify.app/notion.png",
         alt:"img",
     },
     {
         id:7,
-        url:{Netflix},
+        url:"https://deluxe-kitsune-924f7c.netlify.app/netflix.png",
         alt:"img",
     },
 ]
