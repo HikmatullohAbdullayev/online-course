@@ -1,4 +1,4 @@
-export const cardData = [
+const cardData = [
     {
         id:"1",
         number:"01",
@@ -43,3 +43,5 @@ export const cardData = [
     },
 
 ]
+
+export default cardData 

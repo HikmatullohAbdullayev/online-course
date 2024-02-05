@@ -1,4 +1,4 @@
-export const courseData =[
+ const courseData =[
     {
         id:"1",
         img:"../../../../../src/assets/img/Image.png",
@@ -56,3 +56,5 @@ export const courseData =[
         content:"Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.",
     },
 ]
+
+export default courseData

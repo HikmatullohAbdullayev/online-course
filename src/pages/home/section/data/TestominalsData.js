@@ -1,7 +1,7 @@
-export const testominalsData = [
+ const testominalsData = [
     {
         id:"1",
-        img:"../../../../assets/img/sarah.png",
+        img:"../../../../../src/assets/img/sarah.png",
         name:"Sarah L",
         content:"The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!",
     },
@@ -24,3 +24,4 @@ export const testominalsData = [
         content:"The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!",
     },
 ]
+export default testominalsData
