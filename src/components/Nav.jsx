@@ -11,22 +11,22 @@ function Nav(props) {
           open?"mobile3:top-0 ":"mobile3:top-[-500px]"
         } `}
         >
-        <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-white rounded-6 table:py-12 table:text-text16 mobile3:text-text12  mobile3:mt-[80px] mobile3:hover:bg-primary mobile3:p-6 ">
+        <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary mobile3:hover:text-white rounded-6 table:py-12 table:text-text16 mobile3:text-text12  mobile3:mt-[80px] mobile3:hover:bg-primary mobile3:p-6 ">
           {" "}
           Home{" "}
         </li>
-        <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-white rounded-6  table:py-12 table:text-text16 mobile3:text-text12  mobile3:hover:bg-primary mobile3:p-6  ">
+        <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary mobile3:hover:text-whiterounded-6  table:py-12 table:text-text16 mobile3:text-text12  mobile3:hover:bg-primary mobile3:p-6  ">
           {" "}
           Courses{" "}
         </li>
-        <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-white rounded-6  table:py-12 table:text-text16 mobile3:text-text12  mobile3:hover:bg-primary mobile3:p-6  ">
+        <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary mobile3:hover:text-whiterounded-6  table:py-12 table:text-text16 mobile3:text-text12  mobile3:hover:bg-primary mobile3:p-6  ">
           {" "}
           About Us{" "}
         </li>
-        <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-white rounded-6  table:py-12 table:text-text16 mobile3:text-text12  mobile3:hover:bg-primary mobile3:p-6  ">
+        <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary mobile3:hover:text-whiterounded-6  table:py-12 table:text-text16 mobile3:text-text12  mobile3:hover:bg-primary mobile3:p-6  ">
           Pricing
         </li>
-        <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-white rounded-6  table:py-12 table:text-text16 mobile3:text-text12  mobile3:hover:bg-primary mobile3:p-6  ">
+        <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary mobile3:hover:text-white rounded-6  table:py-12 table:text-text16 mobile3:text-text12  mobile3:hover:bg-primary mobile3:p-6  ">
           Contact
         </li>
        
