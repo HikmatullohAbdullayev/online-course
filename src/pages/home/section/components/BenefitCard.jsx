@@ -1,6 +1,6 @@
 import React from 'react';
 import VectorTopIcon from "../../../../assets/icon/VectorTopIcon"
-import { cardData } from '../data/BenefitData';
+import  cardData  from '../data/BenefitData.js';
 
 
 function BenefitCard(props) {

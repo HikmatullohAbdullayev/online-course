@@ -1,5 +1,5 @@
 import React from 'react';
-import { courseData } from '../data/CourseData';
+import  courseData  from '../data/CourseData.js';
 
 function CourseCard(props) {
     return (
