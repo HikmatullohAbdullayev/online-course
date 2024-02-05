@@ -14,7 +14,7 @@ import Button2 from '../../../components/Button2';
 const imgData =[
     {
         id:1,
-        url:{Zapier},
+        url:"https://deluxe-kitsune-924f7c.netlify.app/amazon.png",
         alt:"img",
     },
     {
