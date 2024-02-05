@@ -1,4 +1,4 @@
-import Sarah from "../../../../assets/img/sarah.png"
+import Sarah from "../../../../../src/assets/img/sarah.png"
 
 
 const testominalsData = [
