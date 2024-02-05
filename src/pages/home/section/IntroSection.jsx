@@ -56,7 +56,7 @@ function IntroSection(props) {
             <ul  className='flex justify-around items-center mx-auto w-full p-24 bg-white rounded-6 mt-100'>  
                 {imgData.map((item) => (
                    
-                    <li key={item.id} className='p-20'><img src={item.url} alt={item.alt} />   {console.log(item)}</li>
+                    <li key={item.id} className='p-20'><img src={item.url} alt={item.alt} />  </li>
                 ))}
 
             </ul>
