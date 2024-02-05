@@ -2,7 +2,7 @@ import React from 'react';
 import ChaqIcon from "../../../../src/assets/icon/ChaqIcon"
 import Zapier from "../../../../src/assets/img/zapier.png"
 import Zoom from "../../../../src/assets/img/zoom.png"
-import Amazon from "https://deluxe-kitsune-924f7c.netlify.app/adobe.png"
+import Amazon from "../../../../src/assets/img/amazon.png"
 import Adobe from "../../../../src/assets/img/adobe.png"
 import Sopotify from "../../../../src/assets/img/sopotify.png"
 import Notion from "../../../../src/assets/img/notion.png"

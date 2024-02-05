@@ -1,7 +1,7 @@
  const courseData =[
     {
         id:"1",
-        img:"../../../../../src/assets/img/Image.png",
+        img:"https://deluxe-kitsune-924f7c.netlify.app/amazon.png",
         tetle:"Web Design Fundamentals",
         week:"4 Weeks",
         level:"Beginner",
