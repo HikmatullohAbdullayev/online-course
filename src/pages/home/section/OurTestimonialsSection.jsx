@@ -1,9 +1,11 @@
 import React from 'react';
 import SectionTop from './components/SectionTop';
 import  testominalsData  from './data/TestominalsData.js';
-import Img from  "../../../../../src/assets/img/sarah.png"
+import Img from  "../../../assets/img/sarah.png"
+
 
 function OurTestimonialsSection(props) {
+    console.log(Img);
     return (
         <section className="container mx-auto mt-100"> 
               <SectionTop
@@ -19,7 +21,7 @@ function OurTestimonialsSection(props) {
                             <img src={Img} alt="img" />
                             <h3>{item.name}</h3>
                         </div>
-                        <p className=' p-10 bg-background cursor-pointer rounded-8 hover:bg-primary hover:text-white'> Read Full Story</p>
+                        <p className=' p-10 bg-background cursor-pointer rounded-8 hover:bg-primary hover:text-white'> Read Full Story+</p>
                     </div>
                 </div>
             ))
