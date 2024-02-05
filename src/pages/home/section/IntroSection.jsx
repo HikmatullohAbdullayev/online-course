@@ -1,5 +1,12 @@
 import React from 'react';
 import ChaqIcon from "../../../../src/assets/icon/ChaqIcon"
+import Zapier from "../../../../src/assets/img/zapier.png"
+import Zoom from "../../../../src/assets/img/zoom.png"
+import Amazon from "https://deluxe-kitsune-924f7c.netlify.app/adobe.png"
+import Adobe from "../../../../src/assets/img/adobe.png"
+import Sopotify from "../../../../src/assets/img/sopotify.png"
+import Notion from "../../../../src/assets/img/notion.png"
+import Netflix from "../../../../src/assets/img/netflix.png"
 
 import Button1 from '../../../components/Button1';
 import Button2 from '../../../components/Button2';
@@ -7,37 +14,37 @@ import Button2 from '../../../components/Button2';
 const imgData =[
     {
         id:1,
-        url:"../../../../src/assets/img/zapier.png",
+        url:{Zapier},
         alt:"img",
     },
     {
         id:2,
-        url:"../../../../src/assets/img/zoom.png",
+        url:{Zoom},
         alt:"img",
     },
     {
         id:3,
-        url:"../../../../src/assets/img/amazon.png",
+        url:{Amazon},
         alt:"img",
     },
     {
         id:4,
-        url:"../../../../src/assets/img/adobe.png",
+        url:{Adobe},
         alt:"img",
     },
     {
         id:5,
-        url:"../../../../src/assets/img/notion.png",
+        url:{Sopotify},
         alt:"img",
     },
     {
         id:6,
-        url:"../../../../src/assets/img/netflix.png",
+        url:{Notion},
         alt:"img",
     },
     {
         id:7,
-        url:"../../../../src/assets/img/sopotify.png",
+        url:{Netflix},
         alt:"img",
     },
 ]
