@@ -4,7 +4,7 @@ import cardData from "../data/BenefitData.js";
 
 function BenefitCard(props) {
   return (
-    <div className="grid   gap-10 mt-80 p-14 grid-cols-[repeat(auto-fill,minmax(330px,1fr))]    ">
+    <div className="grid   gap-10 mt-80 p-14 grid-cols-[repeat(auto-fill,minmax(350px,1fr))]    ">
       {cardData?.map((item) => (
         <div
           className="card p-30 bg-white rounded-6  hover:shadow-md"
