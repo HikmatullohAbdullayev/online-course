@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ChaqIcon from "../../../../src/assets/icon/ChaqIcon"
 import Zapier from "../../../../src/assets/img/zapier.png"
 import Zoom from "../../../../src/assets/img/zoom.png"
@@ -7,6 +7,9 @@ import Adobe from "../../../../src/assets/img/adobe.png"
 import Sopotify from "../../../../src/assets/img/sopotify.png"
 import Notion from "../../../../src/assets/img/notion.png"
 import Netflix from "../../../../src/assets/img/netflix.png"
+import Aos from 'aos';
+import "aos/dist/aos.css"
+
 
 import Button1 from '../../../components/Button1';
 import Button2 from '../../../components/Button2';
@@ -48,10 +51,16 @@ const imgData =[
         alt:"img",
     },
 ]
+
+
 function IntroSection(props) {
+
+    useEffect(()=>{
+        Aos.init()
+    },[])
     return (
         <section className='container mx-auto mt-100'>
-            <div className="text-center ">
+            <div data-aos="fade-up" data-aos-duration="500" className="text-center ">
                 <div className="flex justify-center items-center gap-10 max-w-[800px] mx-auto p-12 bg-white rounded-6 "> <span className=''><ChaqIcon/></span> <h1 className=' font-600 text-title48' ><span className='text-primary'>Unlock</span> Your Creative Potential</h1></div>
                 <p className='mt-16 text-subTitle28 font-500'>with Online Design and Development Courses.</p>
                 <p className='mt-16 text-text16 font-400'>Learn from Industry Experts and Enhance Your Skills.</p>

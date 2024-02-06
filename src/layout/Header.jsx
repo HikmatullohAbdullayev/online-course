@@ -16,7 +16,7 @@ const {open,setOpen} = useContext(BurgerContext)
       <div className=" bg-primary rounded-6">
         <p className="flex items-center   justify-center text-text18 text-white   text-center px-2 py-8 table:text-text16 mobile530:text-text12 ">
           Free Courses 🌟 Sale Ends Soon, Get It Now
-        <span className="ml-16 mobile530:hidden ">
+        <span className="ml-16 mobile530:hidden fill-white ">
           <VectorIcon />
         </span> 
         </p>
