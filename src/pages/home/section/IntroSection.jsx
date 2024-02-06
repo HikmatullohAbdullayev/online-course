@@ -51,7 +51,7 @@ const imgData =[
 function IntroSection(props) {
     return (
         <section className='container mx-auto mt-100'>
-            {/* <div className="text-center ">
+            <div className="text-center ">
                 <div className="flex justify-center items-center gap-10 max-w-[800px] mx-auto p-12 bg-white rounded-6 "> <span className=''><ChaqIcon/></span> <h1 className=' font-600 text-title48' ><span className='text-primary'>Unlock</span> Your Creative Potential</h1></div>
                 <p className='mt-16 text-subTitle28 font-500'>with Online Design and Development Courses.</p>
                 <p className='mt-16 text-text16 font-400'>Learn from Industry Experts and Enhance Your Skills.</p>
@@ -59,7 +59,7 @@ function IntroSection(props) {
                     <Button2>Explore Courses</Button2>
                     <Button1>View Pricing</Button1>  
                 </div>
-            </div> */}
+            </div>
             <ul  className='flex justify-around items-center  mx-auto w-full p-24 bg-white rounded-6 mt-100 desktop:overflow-x-scroll'>  
                 {imgData.map((item) => (
                    
