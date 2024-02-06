@@ -7,9 +7,9 @@ import { SectionContext } from "./assets/context/SectionContext";
 import { Link, Routes, Route } from "react-router-dom";
 import About from "./pages/about/About";
 import NotFound from "./pages/NotFound/NotFound";
-// import MainPage from "./pages/login/MainPage";
-// import Login from "./pages/login/components/LogIn";
-// import SignUp from "./pages/login/components/SignUp";
+import MainPage from "./pages/login/MainPage";
+import Login from "./pages/login/components/Login.Jsx"
+import SignUp from "./pages/signup/components/SignUp";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -23,8 +23,8 @@ function App() {
               <Route path="/" element={<MainLayout />}>
                 <Route index element={<Home />} />
                 <Route path="about" element={<About />} />
-                {/* <Route path="signup" element={<SignUp/>}/>
-                <Route path="login" element={<Login/>}/> */}
+                <Route path="signup" element={<SignUp/>}/>
+                <Route path="login" element={<Login/>}/>
 
                 <Route path="*" element={<NotFound/>}/>
                </Route>

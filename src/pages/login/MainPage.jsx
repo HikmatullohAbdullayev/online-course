@@ -1,14 +1,14 @@
-// import React from 'react';
-// import LogIn from "./components/LogIn"
-// import SignUp from './components/SignUp';
+import React from 'react';
+import Login from "./components/Login.Jsx"
+import SignUp from './components/SignUp';
 
-// function MainPage(props) {
-//     return (
-//         <div>
-//             <SignUp/>
-//             <LogIn/>
-//         </div>
-//     )
-// }
+function MainPage(props) {
+    return (
+        <div>
+            <SignUp/>
+            <Login/>
+        </div>
+    )
+}
 
-// export default MainPage;
+export default MainPage;
