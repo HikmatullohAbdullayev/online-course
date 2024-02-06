@@ -9,7 +9,7 @@ import About from "./pages/about/About";
 import NotFound from "./pages/NotFound/NotFound";
 import MainPage from "./pages/login/MainPage";
 import Login2 from "./pages/login/components/Login2";
-import SignUp from "./pages/signup/components/SignUp";
+import Signup2 from "./pages/login/components/Signup2";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -23,7 +23,7 @@ function App() {
               <Route path="/" element={<MainLayout />}>
                 <Route index element={<Home />} />
                 <Route path="about" element={<About />} />
-                <Route path="signup" element={<SignUp/>}/>
+                <Route path="signup" element={<Signup2/>}/>
                 <Route path="login" element={<Login2/>}/>
 
                 <Route path="*" element={<NotFound/>}/>

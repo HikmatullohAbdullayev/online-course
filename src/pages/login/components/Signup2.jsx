@@ -4,7 +4,7 @@ import { ToastContainer,toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css"
 
 
-const SignUp = () => {
+const Signup2 = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [fullName, setFullName] = useState('');
@@ -51,7 +51,7 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Signup2;
 
 
 
