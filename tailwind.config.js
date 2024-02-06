@@ -60,6 +60,9 @@ export default {
       'tablemin': {'max': '845px'},
       // => @media (max-width: 845px) { ... }
 
+      'table1005': {'max':'1005px'} ,
+      // => @media (max-width: 1005px) { ... }
+
       'table': {'max':'1024px'} ,
       // => @media (max-width: 1024px) { ... }
      

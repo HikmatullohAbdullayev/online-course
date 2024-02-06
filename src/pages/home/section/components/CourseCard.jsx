@@ -15,7 +15,7 @@ function CourseCard(props) {
                             </div>
                             <h4 className='font-500 text-[20px] py-14'>{item.name}</h4>
                         </div>
-                        <h3 className='text-subTitle24 font-600'>{item.tetle}</h3>
+                        <h3 className='text-subTitle24 font-600 '>{item.tetle}</h3>
                         <p className='font-400 text-text18 text-text p-16 mobil2:p-4 '>{item.content}</p>
                         <p className='font-400 text-text18 text-text text-center bg-[#f7f7f8] py-18 rounded-6 px-24 cursor-pointer hover:shadow-md  hover:bg-primary hover:text-white mobile530:py-14 mobile530:px-10 '>Get it Now</p>
                     </div>

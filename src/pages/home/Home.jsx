@@ -15,9 +15,9 @@ function Home(props) {
         <BannerSection/>
         <BenefitsSection/>
         <OurCoursesSection/>
-        {/* <OurTestimonialsSection/>
+        <OurTestimonialsSection/>
         <PricingSection/>
-        <FAQSection/> */}
+        <FAQSection/>
         </>
     );
 }

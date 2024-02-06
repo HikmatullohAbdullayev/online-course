@@ -15,35 +15,35 @@ const pricieDataPro = {
 function PricingCard(props) {
   return (
     <div className="p-10 w-full text-center bg-background">
-      <p className="font-500 text-[22px] rounded-6 bg-secondary2 w-full py-12" >Pro Plan</p>
+      <p className="font-500 text-[22px] rounded-6 bg-secondary2 w-full py-12" >FerrPlan</p>
       <p className="text-name20 font-500 py-50">
-        <strong className="font-600 text-number80">$79</strong> /month
+        <strong className="font-600 text-number80">0$</strong> /month
       </p>
-      <ul className="p-30  bg-white rounded-6">
+      <ul className="p-30  bg-white rounded-6 table1080:p-18">
       <p className="font-500 text-[20px] ">Available Features</p>
-        <li className="flex justify-start items-center pl-50 gap-10 mt-16 border border-text rounded-6 py-10 ">
+        <li className="flex justify-start items-center px-20 gap-10 mt-16 border border-text rounded-6 py-10  table1170:px-15 ">
           {" "}
           <img src={chek} alt="" /> <p className="font-400 text-text18 ">{pricieDataPro.text1}</p>
         </li>
-        <li className="flex justify-start items-center pl-50 gap-10 mt-16 border border-text rounded-6 py-10 ">
+        <li className="flex justify-start items-center px-20 gap-10 mt-16 border border-text rounded-6 py-10  table1170:px-15 ">
           {" "}
           <img src={chek} alt="" /> <p className="font-400 text-text18 ">{pricieDataPro.text2}</p>
         </li>
-        <li className="flex justify-start items-center pl-50  gap-10 mt-16 border border-text rounded-6 py-10 ">
+        <li className="flex justify-start items-center px-20  gap-10 mt-16 border border-text rounded-6 py-10 table1170:px-15  ">
           {" "}
           <img src={chek} alt="" /> <p className="font-400 text-text18 ">{pricieDataPro.text3}</p>
         </li>
-        <li className="flex justify-start items-center pl-50  gap-10 mt-16 border border-text rounded-6 py-10 ">
+        <li className="flex justify-start items-center px-20  gap-10 mt-16 border border-text rounded-6 py-10 table1170:px-15  ">
           {" "}
           <img src={chek} alt="" /> <p className="font-400 text-text18 ">{pricieDataPro.text4}</p>
         </li>
-        <li className="flex justify-start items-center pl-50 gap-10 mt-16 border border-text rounded-6 py-10 ">
+        <li className="flex justify-start items-center px-20 gap-10 mt-16 border border-text rounded-6 py-10  table1170:px-15 ">
           {" "}
-          <img src={chek} alt="" /> <p className="font-400 text-text18 ">{pricieDataPro.text5}</p>
+          <img src={no} alt="" /> <p className="font-400 text-text18 ">{pricieDataPro.text5}</p>
         </li>
-        <li className="flex justify-start items-center pl-50  gap-10 mt-16 border border-text rounded-6 py-10 ">
+        <li className="flex justify-start items-center px-20  gap-10 mt-16 border border-text rounded-6 py-10 table1170:px-15  ">
           {" "}
-          <img src={chek} alt="" /> <p className="font-400 text-text18 ">{pricieDataPro.text6}</p>
+          <img src={no} alt="" /> <p className="font-400 text-text18 ">{pricieDataPro.text6}</p>
         </li>
        
       </ul>
