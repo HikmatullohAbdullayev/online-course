@@ -1,12 +1,12 @@
 import React from 'react';
-import Singin from "../login/components/Singin"
-import Login from "./components/Login"
+import LogIn from "./components/LogIn"
+import SignUp from './components/SignUp';
 
 function MainPage(props) {
     return (
         <div>
-            <Singin/>
-            <Login/>
+            <SignUp/>
+            <LogIn/>
         </div>
     )
 }

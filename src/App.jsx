@@ -8,6 +8,8 @@ import { Link, Routes, Route } from "react-router-dom";
 import About from "./pages/about/About";
 import NotFound from "./pages/NotFound/NotFound";
 import MainPage from "./pages/login/MainPage";
+import LogIn from "./pages/login/components/LogIn";
+import SignUp from "./pages/login/components/SignUp";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -21,7 +23,8 @@ function App() {
               <Route path="/" element={<MainLayout />}>
                 <Route index element={<Home />} />
                 <Route path="about" element={<About />} />
-                <Route path="login" element={<MainPage/>}/>
+                <Route path="signup" element={<SignUp/>}/>
+                <Route path="login" element={<LogIn/>}/>
 
                 <Route path="*" element={<NotFound/>}/>
                </Route>

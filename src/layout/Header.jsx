@@ -5,7 +5,7 @@ import Nav from "../components/Nav";
 import Button1 from "../components/Button1";
 import Button2 from "../components/Button2";
 import { BurgerContext } from "../assets/context/BurgerContext";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 function Header(props) {
@@ -32,8 +32,8 @@ const {open,setOpen} = useContext(BurgerContext)
         </div>
 
         <div className="flex justify-between items-center gap-10 tablemin:gap-6  mobile:gap-0">
-          <Button1> Sing Up</Button1>
-          <Button2>Login</Button2>
+         <Link to="signup"> <Button1> Sing Up</Button1></Link>
+          <Link to="login"><Button2>Login</Button2></Link>
           <button
           onClick={() => setOpen(!open)}
           className={` flex flex-col justify-center shadow-md bg-primary rounded-8 w-50 h-50 mobile:w-40 mobile:h-40 hidden ${open ? "mt-12 mr-12" : "" } z-20 cursor-pointer mobile3:flex mobil670:gap-0 mobile3:transition-all mobile3:duration-500 mobile3:ease-in-out `}

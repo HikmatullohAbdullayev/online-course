@@ -14,10 +14,10 @@ function Home(props) {
         <IntroSection/>
         <BannerSection/>
         <BenefitsSection/>
-        <OurCoursesSection/>
+        {/* <OurCoursesSection/>
         <OurTestimonialsSection/>
         <PricingSection/>
-        <FAQSection/>
+        <FAQSection/> */}
         </>
     );
 }

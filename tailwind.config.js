@@ -1,5 +1,6 @@
 
 
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -16,6 +17,7 @@ export default {
         'text18': '18px',     // Desktop
 
         'number60': '60px',   // Table
+        'number70': '70px',   // Table
         'title36': '36px',  // Table
         'subTitle28': '28px',  // Table
         'subTitle24': '24px',  // Table
@@ -57,6 +59,12 @@ export default {
 
       'table': {'max':'1024px'} ,
       // => @media (max-width: 1024px) { ... }
+     
+      'table1080': {'max':'1080px'} ,
+      // => @media (max-width: 1080px) { ... }
+      
+      'table1170': {'max':'1170px'} ,
+      // => @media (max-width: 1170px) { ... }
 
       'desktop': {'max':'1280px'} ,
       // => @media (max-width: 1280px) { ... }
