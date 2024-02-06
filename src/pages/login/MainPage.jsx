@@ -1,12 +1,12 @@
 import React from 'react';
-import Login from "./components/Login.Jsx"
+import Login2 from './components/Login2';
 import SignUp from './components/SignUp';
 
 function MainPage(props) {
     return (
         <div>
             <SignUp/>
-            <Login/>
+            <Login2/>
         </div>
     )
 }
