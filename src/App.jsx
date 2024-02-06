@@ -8,7 +8,7 @@ import { Link, Routes, Route } from "react-router-dom";
 import About from "./pages/about/About";
 import NotFound from "./pages/NotFound/NotFound";
 import MainPage from "./pages/login/MainPage";
-import LogIn from "./pages/login/components/LogIn";
+import Login from "./pages/login/components/LogIn";
 import SignUp from "./pages/login/components/SignUp";
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
                 <Route index element={<Home />} />
                 <Route path="about" element={<About />} />
                 <Route path="signup" element={<SignUp/>}/>
-                <Route path="login" element={<LogIn/>}/>
+                <Route path="login" element={<Login/>}/>
 
                 <Route path="*" element={<NotFound/>}/>
                </Route>
