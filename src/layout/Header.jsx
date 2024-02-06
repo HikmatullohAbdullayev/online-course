@@ -32,7 +32,7 @@ const {open,setOpen} = useContext(BurgerContext)
         </div>
 
         <div className="flex justify-between items-center gap-10 tablemin:gap-6  mobile:gap-0">
-         <Link to="signup"> <Button1> Sing Up</Button1></Link>
+         <Link to="signup"> <Button1> Sing Up🚪</Button1></Link>
           <Link to="login"><Button2>Login</Button2></Link>
           <button
           onClick={() => setOpen(!open)}

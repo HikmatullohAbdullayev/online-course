@@ -1,11 +1,11 @@
 import React from 'react';
 import VectorTopIcon from "../../../../assets/icon/VectorTopIcon"
 import  cardData  from '../data/BenefitData.js';
-
+// table1080:grid table1080:grid-cols-2  mobil670:grid mobil670:
 
 function BenefitCard(props) {
     return (
-        <div className='grid grid-cols-3 gap-20 mt-80 p-14 table1080:grid table1080:grid-cols-2 mobil670:mt-50 mobil670:grid mobil670:grid-cols-1 mobil670:bg-primary '>
+        <div className='grid   gap-10 mt-80 p-14 grid-cols-[repeat(auto-fill,minmax(330px,1fr))]    '>
       
             {
                 cardData?.map((item) =>(
@@ -13,7 +13,7 @@ function BenefitCard(props) {
                         <p className='flex justify-end font-600  p-10 text-number80 table1170:text-number70'>{item.number}</p>
                         <h3 className='font-500 text-subTitle24 mb-14  p-6  table1170:text-name20'>{item.title}</h3>
                         <p className='font-400 text-text18 mb-50 p-6 text-text table1170:text-text16 mobile3:mb-20'>{item.content}</p>
-                        <span className='flex justify-end   '><VectorTopIcon/></span>
+                        <span className='flex justify-end p-  '><VectorTopIcon/></span>
                     </div>
                 ))
             }
@@ -23,3 +23,6 @@ function BenefitCard(props) {
 }
 
 export default BenefitCard;
+
+
+// grid-cols-[repeat(auto-fill, minmax(250px, 1fr))]

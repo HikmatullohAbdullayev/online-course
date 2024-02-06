@@ -50,6 +50,9 @@ export default {
      
       'mobil670': {'max':'670px'},
       // => @media (max-width: 670px) { ... }
+     
+      'mobil675': {'max':'675px'},
+      // => @media (max-width: 670px) { ... }
 
       'mobile3': {'max': '768px'},
       // => @media (max-width: 768px) { ... }
