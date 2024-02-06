@@ -5,7 +5,7 @@ import  cardData  from '../data/BenefitData.js';
 
 function BenefitCard(props) {
     return (
-        <div className='grid grid-cols-3 gap-20 mt-80 p-14 table1080:grid table1080:grid-cols-2 mobil670:mt-50 mobile530:grid mobile530:grid-cols-1 '>
+        <div className='grid grid-cols-3 gap-20 mt-80 p-14 table1080:grid table1080:grid-cols-2 mobil670:mt-50 mobil670:grid mobil670:grid-cols-1 mobil670:bg-primary '>
       
             {
                 cardData?.map((item) =>(
