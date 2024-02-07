@@ -2,13 +2,13 @@ import { useState } from "react";
 import "./App.css";
 import Home from "./pages/home/Home";
 import MainLayout from "./layout/MainLayout";
-import { BurgerContext } from "./assets/context/BurgerContext";
-import { SectionContext } from "./assets/context/SectionContext";
+import { BurgerContext } from "./context/BurgerContext";
+import { SectionContext } from "./context/SectionContext";
 import { Link, Routes, Route } from "react-router-dom";
 
 import NotFound from "./pages/NotFound/NotFound";
 import MainPage from "./pages/login/MainPage";
-import Login2 from "./pages/login/components/Login2";
+// import Login2 from "./pages/login/components/Login2";
 import Signup2 from "./pages/login/components/Signup2";
 import Courses from "./pages/courses/Courses";
 
@@ -44,7 +44,6 @@ function App() {
                 
                 
                 <Route path="signup" element={<Signup2/>}/>
-                <Route path="login" element={<Login2/>}/>
 
                 <Route path="*" element={<NotFound/>}/>
                </Route>

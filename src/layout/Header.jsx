@@ -3,7 +3,7 @@ import VectorIcon from "../assets/icon/VectorIcon";
 import Logo from "../assets/img/Logo.png";
 import Nav from "../components/Nav";
 import Button2 from "../components/Button2";
-import { BurgerContext } from "../assets/context/BurgerContext";
+import { BurgerContext } from "../context/BurgerContext";
 import { NavLink, Navigate } from "react-router-dom";
 
 import { useNavigate } from 'react-router-dom';

@@ -7,7 +7,7 @@ function BenefitCard(props) {
     <div className="grid   gap-10 mt-80 p-14 grid-cols-[repeat(auto-fill,minmax(350px,1fr))]    ">
       {cardData?.map((item) => (
         <div
-          className="card p-30 bg-white rounded-6  hover:shadow-md"
+          className="card p-20 bg-white rounded-6  hover:shadow-md"
           key={item.id}
         >
           <p className="flex justify-end font-600  p-10 text-number80 table1170:text-number70">

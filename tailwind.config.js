@@ -74,6 +74,9 @@ export default {
       'table1170': {'max':'1170px'} ,
       // => @media (max-width: 1170px) { ... }
 
+      'desktop1220': {'max':'1220px'} ,
+      // => @media (max-width: 1220px) { ... }
+
       'desktop': {'max':'1280px'} ,
       // => @media (max-width: 1280px) { ... }
      

@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { BurgerContext } from "../assets/context/BurgerContext";
+import { BurgerContext } from "../context/BurgerContext";
 import { NavLink } from "react-router-dom";
 
 function Nav(props) {
