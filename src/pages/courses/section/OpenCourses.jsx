@@ -1,5 +1,5 @@
 import React from 'react';
-import OpenCoursesSection from '../components/OpenCoursesSection';
+import OpenCoursesSection from '../openCourse/components/OpenCoursesSection';
 
 function OpenCourses(props) {
     return (
