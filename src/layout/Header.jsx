@@ -1,15 +1,29 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import VectorIcon from "../assets/icon/VectorIcon";
 import Logo from "../assets/img/Logo.png";
 import Nav from "../components/Nav";
 import Button1 from "../components/Button1";
 import Button2 from "../components/Button2";
 import { BurgerContext } from "../assets/context/BurgerContext";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, Navigate } from "react-router-dom";
 
+import { useNavigate } from 'react-router-dom';
 
 function Header(props) {
 const {open,setOpen} = useContext(BurgerContext)
+const navigate = useNavigate()
+
+const userData = JSON.parse(localStorage.getItem("userData"))
+console.log(userData);
+
+const clearData = ()=>{
+  localStorage.clear()
+  console.log("qqq");
+  navigate("/signup")
+  alert("Tizimdan chiqish")
+}
+
+
 
   return (
     <div className="relative mx-auto container px-10   fixed top-0">
@@ -32,8 +46,8 @@ const {open,setOpen} = useContext(BurgerContext)
         </div>
 
         <div className="flex justify-between items-center gap-10 tablemin:gap-6  mobile:gap-0">
-         <Link to="signup"> <Button1> Sing Up</Button1></Link>
-          <Link to="login"><Button2>Login</Button2></Link>
+         {  userData?  <span onClick={()=>clearData()}><Button2>LogOut</Button2></span> : <Navigate to="signup"/>}
+         
           <button
           onClick={() => setOpen(!open)}
           className={` flex flex-col justify-center shadow-md bg-primary rounded-8 w-50 h-50 mobile:w-40 mobile:h-40 hidden ${open ? "mt-12 mr-12" : "" } z-20 cursor-pointer mobile3:flex mobil670:gap-0 mobile3:transition-all mobile3:duration-500 mobile3:ease-in-out `}

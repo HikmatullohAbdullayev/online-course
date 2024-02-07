@@ -8,6 +8,7 @@ import PricingSection from "./section/PricingSection"
 import FAQSection from "./section/FAQSection"
 
 
+
 function Home(props) {
     return (
         <>

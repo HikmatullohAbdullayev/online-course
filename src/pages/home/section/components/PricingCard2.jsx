@@ -15,9 +15,9 @@ const pricieDataPro = {
 function PricingCard(props) {
   return (
     <div className="p-10 w-full rounded-6 text-center bg-background">
-      <p className="font-500 text-[22px] rounded-6 bg-secondary2 w-full py-12" >FerrPlan</p>
+      <p className="font-500 text-[22px] rounded-6 bg-secondary2 w-full py-12" >ProPlan</p>
       <p className="text-name20 font-500 py-50">
-        <strong className="font-600 text-number80">0$</strong> /month
+        <strong className="font-600 text-number80">79$</strong> /month
       </p>
       <ul className="p-30  bg-white rounded-6 table1080:p-18">
       <p className="font-500 text-[20px] ">Available Features</p>
