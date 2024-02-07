@@ -3,7 +3,8 @@ import Accordion from "../../../components/Accordion";
 
 function FAQSection(props) {
   return (
-    <section className="container mx-auto mt-100 bg-white p-50 mobile530:p-20">
+    <section data-aos="fade-up"
+    data-aos-anchor-placement="bottom-bottom" className="container mx-auto mt-100 bg-white p-50 mobile530:p-20">
       <div className="flex  justify-between items-start gap-50 table1005:flex-wrap">
       <div className=" ">
         <h1 className="font-600 text-subTitle38 p-12">Frequently Asked Questions</h1>
@@ -40,17 +41,4 @@ function FAQSection(props) {
 
 export default FAQSection;
 
-{
-  /* 
-<div className="p-4 bg-gray-200 rounded-lg">
-<Accordion
-title="Do you prefer Android or iOS"
-answer="I like to use iOS products"
-/>
-<Accordion
-title="Do you prefer writing CSS or Tailwind?"
-answer="I like to use Tailwind"
-/>
-<Accordion title="Firebase or Supabase?" answer="I am using Supabase!" />
-</div> */
-}
+

@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import VectorTopIcon from "../../../../assets/icon/VectorTopIcon";
 import cardData from "../data/BenefitData.js";
+import Aos from 'aos';
+import "aos/dist/aos.css"
+
 
 function BenefitCard(props) {
+  useEffect(()=>{
+    Aos.init()
+},[])
+
+
   return (
-    <div className="grid   gap-10 mt-80 p-4 grid-cols-[repeat(auto-fill,minmax(350px,1fr))]  mobile530:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]  ">
+    <div  className="grid   gap-10 mt-80 p-4 grid-cols-[repeat(auto-fill,minmax(350px,1fr))]  mobile530:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]  " >
       {cardData?.map((item) => (
-        <div
+        <div  data-aos="zoom-in-right"
           className="card p-10 bg-white rounded-6  hover:shadow-md"
           key={item.id}
         >
