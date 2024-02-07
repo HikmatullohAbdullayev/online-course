@@ -1,4 +1,5 @@
 import React from 'react';
+import OpenCoursesContent from '../components/OpenCoursesContent';
 
 function Mobile(props) {
     return (
@@ -6,7 +7,7 @@ function Mobile(props) {
              <OpenCoursesContent
             title="Mobile App Development"
             text="Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin."
-            img="https://deluxe-kitsune-924f7c.netlify.app/Image1.png"
+            img="https://deluxe-kitsune-924f7c.netlify.app/banner.png"
 
             />
         </div>
