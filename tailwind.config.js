@@ -74,6 +74,9 @@ export default {
 
       'desktop': {'max':'1280px'} ,
       // => @media (max-width: 1280px) { ... }
+     
+      'desktop1370': {'max':'1370px'} ,
+      // => @media (max-width: 1370px) { ... }
     },
     colors: {
       white: "#fff",

@@ -45,11 +45,7 @@ const imgData =[
         url:"https://deluxe-kitsune-924f7c.netlify.app/notion.png",
         alt:"img",
     },
-    {
-        id:7,
-        url:"https://deluxe-kitsune-924f7c.netlify.app/netflix.png",
-        alt:"img",
-    },
+  
 ]
 
 
@@ -59,7 +55,7 @@ function IntroSection(props) {
         Aos.init()
     },[])
     return (
-        <section className='container mx-auto mt-100'>
+        <section className='container mx-auto mt-100 flex flex-col items-center'>
             <div data-aos="fade-up" data-aos-duration="500" className="text-center ">
                 <div className="flex justify-center items-center gap-10 max-w-[800px] mx-auto p-12 bg-white rounded-6 "> <span className=''><ChaqIcon/></span> <h1 className=' font-600 text-title48' ><span className='text-primary'>Unlock</span> Your Creative Potential</h1></div>
                 <p className='mt-16 text-subTitle28 font-500'>with Online Design and Development Courses.</p>
@@ -69,13 +65,17 @@ function IntroSection(props) {
                     <Button1>View Pricing</Button1>  
                 </div>
             </div>
-            <ul  className='flex justify-around items-center  mx-auto w-full p-24 bg-white rounded-6 mt-100 desktop:overflow-x-scroll'>  
+          {/* <div className="max-w-[1280px] "> */}
+          <div  className='grid gap-20   w-[100%]   py-24 bg-white rounded-6 mt-100   grid-cols-[repeat(auto-fill,minmax(180px,1fr))]  mx-auto'>  
                 {imgData.map((item) => (
                    
-                    <li key={item.id} className='p-20'><img src={item.url} alt={item.alt} />  </li>
+                    <div key={item.id} className='p-20'>
+                        <img className='w-auto mx-auto' src={item.url} alt={item.alt} /> 
+                         </div>
                 ))}
 
-            </ul>
+            </div>
+          {/* </div> */}
         </section>
     );
 }
