@@ -9,7 +9,7 @@ function OurTestimonialsSection(props) {
         <section className="container mx-auto mt-100"> 
               <SectionTop
         title={"Our Testimonials"} />
-    <div className="grid grid-cols-2  gap-20 mt-80 table:grid-cols-[repeat(auto-fill,minmax(360px,1fr))]  ">
+    <div className="grid grid-cols-2  gap-20 mt-80 table:grid-cols-[repeat(auto-fill,minmax(360px,1fr))]  mobile530:grid-cols-[repeat(auto-fill,minmax(280px,1fr))]">
         {
             testominalsData.map((item) => (
                 <div key={item.id} className="flex flex-col p-20 bg-[#fcfcfd] rounded-6 hover:shadow-md">

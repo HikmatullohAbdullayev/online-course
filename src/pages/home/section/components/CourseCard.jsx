@@ -3,7 +3,7 @@ import  courseData  from '../data/CourseData';
 
 function CourseCard(props) {
     return (
-        <div className='grid   gap-30 mt-80 p-14 grid-cols-[repeat(auto-fill,minmax(384px,1fr))]'>
+        <div className='grid   gap-30 mt-80 p-14 grid-cols-[repeat(auto-fill,minmax(384px,1fr))] mobile530:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]'>
             {
                 courseData.map((item) => (
                     <div className='flex  flex-col p-10 bg-white rounded-6 gap-30  hover:shadow-md  mobil2:p-16 ' key={item.id}>
