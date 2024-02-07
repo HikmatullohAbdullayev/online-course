@@ -25,10 +25,10 @@ const Signup2 = () => {
   };
   const userDataChek = JSON.parse(localStorage.getItem("userData"));
   return (
-    <section className="flex  justify-between items-start ">
+    <section className="flex  justify-between items-start table1005:flex-col table1005:items-center table1005:gap-30 ">
       <div className="flex flex-col items-start ">
-        <div className="flex flex-col justify-between items-start ">
-          <h2 className="font-600 text-title36 p-8">Students Testimonials</h2>
+        <div className="flex flex-col justify-between items-start  p-20">
+          <h2 className="font-600 text-title36 p-8 table1005:text-subTitle24">Students Testimonials</h2>
           <p className="font-500 text-text18 text-text p-14">
             Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget
             elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum
@@ -36,8 +36,8 @@ const Signup2 = () => {
           </p>
         </div>
 
-        <div className=" max-w-[500px] w-full  gap-20 mt-80   ">
-          <div className="flex flex-col p-20 bg-[#fcfcfd] rounded-6 hover:shadow-md">
+        <div className=" max-w-[500px] w-full  mx-auto gap-20 mt-80   ">
+          <div className="flex flex-col p-20  bg-[#fcfcfd] rounded-6 hover:shadow-md">
             <p className="p-30 bg-white rounded-6  shadow-md">
               The web design course provided a solid foundation for me. The
               instructors were knowledgeable and supportive, and the interactive
@@ -57,47 +57,47 @@ const Signup2 = () => {
         </div>
       </div>
       <div className="max-w-[500px] w-full border border-shadow p-10  ">
-        <p className="font-600 text-title48 text-center">Sign Up</p>
+        <p className="font-600 text-title48 text-center table1005:text-title36">Sign Up</p>
         <p className="text-text18 text-center text-text">Create an account to unlock exclusive features.</p>
         <form className="">
           <div className="p-4">
-            <label htmlFor="name" className="text-text18 w-full p-8">Full Name</label>
+            <label htmlFor="name" className="text-text18 w-full p-8 mb-12">Full Name</label>
             <input className="w-full outline-primary border-primary p-10 rounded-8"
               id="name"
               type="text"
-              placeholder="Username"
+              placeholder="Enter your Name"
               value={username}
               required
               onChange={(e) => setUsername(e.target.value)}
             />
           </div>
           <div className="p-4">
-            <label htmlFor="user" className="text-text18 w-full p-8">user</label>
+            <label htmlFor="user" className="text-text18 w-full p-8 mb-12">Email</label>
             <input
             className="w-full outline-primary border-primary p-10 rounded-8"
               id="user"
-              type="text"
-              placeholder="Username"
+              type="email"
+              placeholder="Enter your Email"
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
               required
             />
           </div>
           <div className="p-4">
-            <label htmlFor="password" className="text-text18 w-full p-8">password</label>
+            <label htmlFor="password" className="text-text18 w-full p-8 mb-12">Password</label>
             <input
             className="w-full outline-primary border-primary p-10 rounded-8"
               id="password"
               type="password"
-              placeholder="Password"
+              placeholder="Enter your Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
             />
           </div>
-          <div className="flex justify-center items-center gap-20">
-          <input className="" type="checkbox" name="chekbox" id="chekbox" />
-          <label className=" w-full " htmlFor="chekbox">I agree with Terms of Use and Privacy Policy</label>
+          <div className="flex justify-center items-center gap-20 p-20">
+          <input className="w-20 h-20" type="checkbox" name="chekbox" id="chekbox" />
+          <label className=" w-full  " htmlFor="chekbox">I agree with Terms of Use and Privacy Policy</label>
           </div>
           <button className="w-full bg-primary py-18 rounded-6 " onClick={() => handleSignUp()} type="submit">
         
