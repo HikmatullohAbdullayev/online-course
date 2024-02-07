@@ -42,6 +42,8 @@ export default {
       'mobile': {'max':'360px'},
       // => @media (max-width: 360px) { ... }
       
+     
+      
       'mobile530': {'max':'530px'},
       // => @media (max-width: 530px) { ... }
       

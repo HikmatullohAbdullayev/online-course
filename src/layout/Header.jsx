@@ -12,7 +12,7 @@ function Header(props) {
 const {open,setOpen} = useContext(BurgerContext)
 
   return (
-    <div className="relative mx-auto container px-10  fixed top-0">
+    <div className="relative mx-auto container px-10   fixed top-0">
       <div className=" bg-primary rounded-6">
         <p className="flex items-center   justify-center text-text18 text-white   text-center px-2 py-8 table:text-text16 mobile530:text-text12 ">
           Free Courses 🌟 Sale Ends Soon, Get It Now
@@ -21,10 +21,10 @@ const {open,setOpen} = useContext(BurgerContext)
         </span> 
         </p>
       </div>
-      <div className="flex items-center  p-0 relative justify-between mt-20 mobile:py-0 mobile:p-0">
+      <div className="flex items-center  p-0 relative  justify-between mt-20 mobile:py-0 mobile:p-0">
         <div className="flex gap-50 mobile:gap-0">
           <NavLink to="/"><img
-            className="table:w-45 tablemin:w-40 tablemin:h-40 mobile530:w-30 mobile530:h-30"
+            className="active table:w-45 tablemin:w-40 tablemin:h-40 mobile530:w-30 mobile530:h-30"
             src={Logo}
             alt="logo"
           /></NavLink>
@@ -32,7 +32,7 @@ const {open,setOpen} = useContext(BurgerContext)
         </div>
 
         <div className="flex justify-between items-center gap-10 tablemin:gap-6  mobile:gap-0">
-         <Link to="signup"> <Button1> Sing Up🚪</Button1></Link>
+         <Link to="signup"> <Button1> Sing Up</Button1></Link>
           <Link to="login"><Button2>Login</Button2></Link>
           <button
           onClick={() => setOpen(!open)}

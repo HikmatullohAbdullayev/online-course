@@ -5,24 +5,44 @@ import MainLayout from "./layout/MainLayout";
 import { BurgerContext } from "./assets/context/BurgerContext";
 import { SectionContext } from "./assets/context/SectionContext";
 import { Link, Routes, Route } from "react-router-dom";
-import About from "./pages/about/About";
+
 import NotFound from "./pages/NotFound/NotFound";
 import MainPage from "./pages/login/MainPage";
 import Login2 from "./pages/login/components/Login2";
 import Signup2 from "./pages/login/components/Signup2";
+import Courses from "./pages/courses/Courses";
+
+import UIUX from "./pages/courses/openCourse/pages/UIUX";
+import WebDev from "./pages/courses/openCourse/pages/WebDev";
+import WebDesing from "./pages/courses/openCourse/pages/WebDesing"
+import Mobile from "./pages/courses/openCourse/pages/Mobile"
+import DesingBeginner from "./pages/courses/openCourse/pages/DesingBeginner"
+
+
+
+
+
 
 function App() {
   const [open, setOpen] = useState(false);
 
   return (
     <>
-      <div>
+      <div className="bg-background">
         <BurgerContext.Provider value={{ open, setOpen }}>
           <SectionContext.Provider value={null}>
             <Routes>
               <Route path="/" element={<MainLayout />}>
                 <Route index element={<Home />} />
-                <Route path="about" element={<About />} />
+                <Route path="courses" element={<Courses/>} />
+
+                  <Route path="courses/uiux" element={<UIUX/>}/>
+                  <Route path="courses/desingbeginner" element={<DesingBeginner/>}/>
+                  <Route path="courses/mobile" element={<Mobile/>}/>
+                  <Route path="courses/webdesing" element={<WebDesing/>}/>
+                  <Route path="courses/webdev" element={<WebDev/>}/>
+                
+                
                 <Route path="signup" element={<Signup2/>}/>
                 <Route path="login" element={<Login2/>}/>
 

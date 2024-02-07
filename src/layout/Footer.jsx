@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 function Footer(props) {
   return (
-    <div className="mt-100 container mx-auto bg-white p-30 tablemin:p-18">
+    <div className="mt-0 container mx-auto bg-white p-30 tablemin:p-18 ">
       <div className="flex justify-between items-start tablemin:flex tablemin:flex-col gap-40 tablemin:items-start tablemin: ">
         <div className="contact">
             <img src={Logo} alt="logo" />

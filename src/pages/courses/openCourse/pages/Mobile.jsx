@@ -1,11 +1,11 @@
 import React from 'react';
 
-function About(props) {
+function Mobile(props) {
     return (
         <div>
-            <h1>About</h1>
+           Mobile 
         </div>
     );
 }
 
-export default About;
+export default Mobile;

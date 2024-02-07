@@ -5,7 +5,7 @@ import CourseCard from './components/CourseCard';
 function OurCoursesSection(props) {
     return (
         <section className="container mx-auto mt-100">
-            <SectionTop title={"Our Courses"} />
+            <SectionTop link={"courses"} title={"Our Courses"} />
 
             <CourseCard/>
         </section>
