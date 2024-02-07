@@ -2,10 +2,9 @@ import React, { useContext, useEffect, useState } from "react";
 import VectorIcon from "../assets/icon/VectorIcon";
 import Logo from "../assets/img/Logo.png";
 import Nav from "../components/Nav";
-import Button1 from "../components/Button1";
 import Button2 from "../components/Button2";
 import { BurgerContext } from "../assets/context/BurgerContext";
-import { Link, NavLink, Navigate } from "react-router-dom";
+import { NavLink, Navigate } from "react-router-dom";
 
 import { useNavigate } from 'react-router-dom';
 
@@ -18,9 +17,7 @@ console.log(userData);
 
 const clearData = ()=>{
   localStorage.clear()
-  console.log("qqq");
   navigate("/signup")
-  alert("Tizimdan chiqish")
 }
 
 
@@ -37,15 +34,17 @@ const clearData = ()=>{
       </div>
       <div className="flex items-center  p-0 relative  justify-between mt-20 mobile:py-0 mobile:p-0">
         <div className="flex gap-50 mobile:gap-0">
+          
           <NavLink to="/"><img
             className="active table:w-45 tablemin:w-40 tablemin:h-40 mobile530:w-30 mobile530:h-30"
             src={Logo}
             alt="logo"
           /></NavLink>
+          
           <Nav />
         </div>
-
         <div className="flex justify-between items-center gap-10 tablemin:gap-6  mobile:gap-0">
+      
          {  userData?  <span onClick={()=>clearData()}><Button2>LogOut</Button2></span> : <Navigate to="signup"/>}
          
           <button

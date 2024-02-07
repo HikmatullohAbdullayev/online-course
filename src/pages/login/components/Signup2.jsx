@@ -9,7 +9,7 @@ const Signup2 = () => {
 
   const navigate = useNavigate()
 
-  const handleSignUp = () => {
+  const handleSignUp = (e) => {
     const userData = {
       fullName,
       username,
@@ -22,7 +22,6 @@ const Signup2 = () => {
     console.log('User signed up:', userData);
     
     navigate("/")
-    alert("eeee")
   };
   const userDataChek = JSON.parse(localStorage.getItem("userData"))
   return (
@@ -51,7 +50,7 @@ const Signup2 = () => {
   onChange={(e) => setPassword(e.target.value)}
   required
 />
-<button  onClick={(e)=>handleSignUp(e)} type='submit' > {userDataChek? <Navigate to="/"/> : "Sign In"}  </button> 
+<button  onClick={()=>handleSignUp()} type='submit' > {userDataChek? <Navigate to="/"/> : "Sign In"}  </button> 
 
 </form>
    
