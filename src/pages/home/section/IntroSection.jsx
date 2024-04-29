@@ -1,15 +1,8 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import ChaqIcon from "../../../../src/assets/icon/ChaqIcon"
-import Zapier from "../../../../src/assets/img/zapier.png"
-import Zoom from "../../../../src/assets/img/zoom.png"
-import Amazon from "../../../../src/assets/img/amazon.png"
-import Adobe from "../../../../src/assets/img/adobe.png"
-import Sopotify from "../../../../src/assets/img/sopotify.png"
-import Notion from "../../../../src/assets/img/notion.png"
-import Netflix from "../../../../src/assets/img/netflix.png"
+
 import Aos from 'aos';
 import "aos/dist/aos.css"
-
 
 import Button1 from '../../../components/Button1';
 import Button2 from '../../../components/Button2';
@@ -49,13 +42,13 @@ const imgData =[
 ]
 
 
-function IntroSection(props) {
+function IntroSection() {
 
     useEffect(()=>{
         Aos.init()
     },[])
     return (
-        <section className='container mx-auto mt-100 flex flex-col items-center'>
+        <section className=' mx-auto mt-100 flex flex-col items-center'>
             <div data-aos="fade-up" data-aos-duration="400" className="text-center ">
                 <div className="flex justify-center items-center gap-10 max-w-[800px] mx-auto p-12 bg-white rounded-6 "> <span className='mobil670:w-50 mobil670:h-50 m-4
                 '><ChaqIcon/></span> <h1 className=' font-600 text-title36 mobile3:text-subTitle28 mobile530:text-text16  ' ><span className='text-primary'>Unlock</span> Your Creative Potential</h1></div>
@@ -66,7 +59,7 @@ function IntroSection(props) {
                     <Button1>View Pricing</Button1>  
                 </div>
             </div>
-          {/* <div className="max-w-[1280px] "> */}
+            
           <div  className='grid gap-20   w-[100%]   py-24 bg-white rounded-6 mt-100   grid-cols-[repeat(auto-fill,minmax(180px,1fr))]  mx-auto desktop1220:grid desktop1220:grid-cols-3 mobile530:grid mobile530:grid-cols-2 '>  
                 {imgData.map((item) => (
                    
@@ -76,7 +69,7 @@ function IntroSection(props) {
                 ))}
 
             </div>
-          {/* </div> */}
+            
         </section>
     );
 }

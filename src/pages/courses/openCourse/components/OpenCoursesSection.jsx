@@ -1,11 +1,11 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
 import coursesData from "../../data/numberData.js";
 
 function OpenCoursesSection(props) {
   return (
     <section className="bg-white mb-100">
-      <div className="p-40 flex justify-between items-center mobil2:flex-col mobil2:items-start">
+      <div className="p-10 flex justify-between items-center mobil2:flex-col mobil2:items-start">
         <div className="content p-20 ">
           <h2 className="font-600 text-name20 p-6">{props.title} </h2>
           <p className="font-400 text-text16 text-text p-4"> {props.text}</p>

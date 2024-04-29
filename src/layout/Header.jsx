@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import  { useContext } from "react";
 import VectorIcon from "../assets/icon/VectorIcon";
 import Logo from "../assets/img/Logo.png";
 import Nav from "../components/Nav";
@@ -8,7 +8,7 @@ import { NavLink, Navigate } from "react-router-dom";
 
 import { useNavigate } from 'react-router-dom';
 
-function Header(props) {
+function Header() {
 const {open,setOpen} = useContext(BurgerContext)
 const navigate = useNavigate()
 
@@ -23,7 +23,7 @@ const clearData = ()=>{
 
 
   return (
-    <div className="relative mx-auto container px-10   fixed top-0">
+    <div className="relative mx-auto  px-10   fixed top-0">
       <div className=" bg-primary rounded-6">
         <p className="flex items-center   justify-center text-text18 text-white   text-center px-2 py-8 table:text-text16 mobile530:text-text12 ">
           Free Courses 🌟 Sale Ends Soon, Get It Now

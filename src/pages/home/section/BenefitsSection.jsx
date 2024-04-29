@@ -1,13 +1,13 @@
-import React from "react";
+
 import BenefitCard from "./components/BenefitCard";
 import SectionTop from "./components/SectionTop";
 
 
 
-function BenefitsSection(props) {
+function BenefitsSection() {
 
   return (
-    <section className="container mx-auto mt-100">
+    <section className=" mx-auto mt-100">
       <SectionTop
         title={"Benefits"}
         

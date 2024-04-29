@@ -4,11 +4,9 @@ import Home from "./pages/home/Home";
 import MainLayout from "./layout/MainLayout";
 import { BurgerContext } from "./context/BurgerContext";
 import { SectionContext } from "./context/SectionContext";
-import { Link, Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 
 import NotFound from "./pages/NotFound/NotFound";
-import MainPage from "./pages/login/MainPage";
-// import Login2 from "./pages/login/components/Login2";
 import Signup2 from "./pages/login/components/Signup2";
 import Courses from "./pages/courses/Courses";
 
@@ -28,7 +26,6 @@ function App() {
 
   return (
     <>
-      <div className="bg-background">
         <BurgerContext.Provider value={{ open, setOpen }}>
           <SectionContext.Provider value={null}>
             <Routes>
@@ -50,7 +47,6 @@ function App() {
             </Routes>
           </SectionContext.Provider>
         </BurgerContext.Provider>
-      </div>
     </>
   );
 }
