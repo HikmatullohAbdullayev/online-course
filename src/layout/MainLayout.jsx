@@ -5,9 +5,9 @@ import { Outlet } from "react-router-dom";
 
 function MainLayout() {
   return (
-    <div className=" shadow-md  flex flex-col justify-between ">
+    <div className="  flex flex-col justify-between ">
       <div className="wrap mb-50">
-        <header className=" container   relative pb-10 pt-0 mb-50 mt-0">
+        <header className="   bg-white shadow-md  relative pb-10 pt-0 mb-50 mt-0">
           <Header />
         </header>
         <main className="container">

@@ -4,7 +4,7 @@ import Logo from "../assets/img/Logo.png";
 import Nav from "../components/Nav";
 import Button2 from "../components/Button2";
 import { BurgerContext } from "../context/BurgerContext";
-import { NavLink, Navigate } from "react-router-dom";
+import { Link, NavLink, Navigate } from "react-router-dom";
 
 import { useNavigate } from 'react-router-dom';
 
@@ -23,7 +23,7 @@ const clearData = ()=>{
 
 
   return (
-    <div className="relative mx-auto  px-10   fixed top-0">
+    <div className="relative container  mx-auto  px-10   fixed top-0">
       <div className=" bg-primary rounded-6">
         <p className="flex items-center   justify-center text-text18 text-white   text-center px-2 py-8 table:text-text16 mobile530:text-text12 ">
           Free Courses 🌟 Sale Ends Soon, Get It Now
@@ -33,13 +33,17 @@ const clearData = ()=>{
         </p>
       </div>
       <div className="flex items-center  p-0 relative  justify-between mt-20 mobile:py-0 mobile:p-0">
-        <div className="flex gap-50 mobile:gap-0">
+        <div className="flex items-center gap-50 mobile:gap-0">
           
-          <NavLink to="/"><img
-            className="active table:w-45 tablemin:w-40 tablemin:h-40 mobile530:w-30 mobile530:h-30"
+          <Link to="/">
+           <div className="  table:w-35 tablemin:w-30 tablemin:h-30 mobile530:w-20 mobile530:h-20">
+             <img
+            className=" w-full "
             src={Logo}
             alt="logo"
-          /></NavLink>
+          />
+           </div>
+          </Link>
           
           <Nav />
         </div>
