@@ -10,10 +10,10 @@ function OurTestimonialsSection() {
         {testominalsData.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col py-20 bg-[#fcfcfd] rounded-6 hover:shadow-md"
+            className="flex flex-col pb-20 bg-[#fcfcfd] rounded-6 hover:shadow-md"
           >
             <p className="p-30 bg-white rounded-6  shadow-md">{item.content}</p>
-            <div className="flex justify-between items-center mt-16 table:justify-around ">
+            <div className="flex justify-between items-center mt-16 px-10  table:justify-around ">
               <div className="flex justify-between items-center gap-16">
                 <img src={item.img} alt="img" />
                 <h3>{item.name}</h3>

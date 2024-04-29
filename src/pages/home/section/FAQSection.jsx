@@ -4,7 +4,7 @@ import Accordion from "../../../components/Accordion";
 function FAQSection() {
   return (
     
-      <section className="flex   justify-between items-start mt-100 bg-white gap-50 table1005:flex-wrap">
+      <section className="flex  container justify-between items-start mt-100 bg-white gap-50 table1005:flex-wrap">
       <div className=" ">
         <h1 className="font-600 text-subTitle38 p-12">Frequently Asked Questions</h1>
         <p className="font-400 text-text16 p-8">

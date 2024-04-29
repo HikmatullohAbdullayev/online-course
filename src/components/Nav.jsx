@@ -18,16 +18,9 @@ function Nav(props) {
         <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary mobile3:hover:text-white rounded-6  table:py-12 table:text-text16 mobile3:text-text12  mobile3:hover:bg-primary mobile3:p-6  ">
         <NavLink to="/courses"> Courses</NavLink>
         </li>
-        <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary mobile3:hover:text-white rounded-6  table:py-12 table:text-text16 mobile3:text-text12  mobile3:hover:bg-primary mobile3:p-6  ">
-        <NavLink to="/about">  About Us</NavLink>
-         
-        </li>
-        <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary mobile3:hover:text-white rounded-6  table:py-12 table:text-text16 mobile3:text-text12  mobile3:hover:bg-primary mobile3:p-6  ">
-          Pricing
-        </li>
-        <li className="font-400 text-text18 text-black py-14 cursor-pointer hover:text-primary mobile3:hover:text-white rounded-6  table:py-12 table:text-text16 mobile3:text-text12  mobile3:hover:bg-primary mobile3:p-6  ">
-          Contact
-        </li>
+       
+        
+       
        
       </ul>
     </nav>

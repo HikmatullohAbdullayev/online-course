@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import  { useState } from "react";
+import {  Navigate, useNavigate } from "react-router-dom";
 import sara from "../../../assets/img/sarah.png";
 import GoogleIcon from "../../../assets/icon/GoogleIcon"
 
@@ -67,8 +67,8 @@ const Signup2 = () => {
               type="text"
               placeholder="Enter your Name"
               value={username}
-              required
               onChange={(e) => setUsername(e.target.value)}
+              required
             />
           </div>
           <div className="p-4">
